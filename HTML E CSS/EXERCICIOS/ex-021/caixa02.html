@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#3d4c5d;
+            
+            
+        }
+        header{
+            
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.450);
+        }
+        h1{
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.4);
+        }
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 10px;
+            /* sombra*/
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.375);
+
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 3px 7px 1px black;
+            border-radius: 0px 10px ;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.4);
+        }
+        article > aside{
+           background-color: rgb(144, 143, 143);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+            box-shadow: 5px 3px 7px 1px black;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="assunto">
+            
+            <article>
+                <h2>Noticia do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eos eveniet similique voluptatibus at nulla libero, totam dolorum. Nesciunt enim perferendis cumque nisi. Iure voluptate nihil totam illo, eaque ad?</p>
+                <aside>
+                    <p>artigo escrito por José Silva</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curdoemvideo.com</p>
+    </footer> 
+    <div id="bola"></div>   
+</body>

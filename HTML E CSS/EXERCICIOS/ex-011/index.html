@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title></title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>tente abrir este  site em varios dipositivo diferentes de varios tamanhos</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/foto p.png" type="imagem/png">
+
+        <source media="(max-width: 1050px)" srcset="imagem/foto m.png" type="imagem/png">
+
+        <img src="imagem/foto g.png" alt="imagem flexivel">
+    </picture>
+
+    <h1> Reproduzindo Audio</h1>
+    <p>vamos aprender a reproduzir áudios em HTML</p>
+
+   
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/narcisa.mp3" type="audio/mpeg">
+        <source src="midia/narcisa.ogg" type="audio/ogg">
+        <source src="midia/narcisa.wav" type="audio/wav">
+        <p>navegador não compativel com <a href="midia/narcisa.mp3">clique para baixar audio MP3</a></p>
+
+    </audio>
+
+</body>
+</html>
