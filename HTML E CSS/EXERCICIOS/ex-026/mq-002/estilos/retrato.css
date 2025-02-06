@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /* aparelho empé (orietation: portrait) */
+
+body{
+   background-image: url(../imagem/cev-portrait.jpg);
+   background-position: center bottom;
+}
