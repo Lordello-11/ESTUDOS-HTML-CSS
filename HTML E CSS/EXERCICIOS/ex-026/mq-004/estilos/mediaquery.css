@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+/* Todas as demais midias  */
+
+/* Typical Device Breakpoints 
+------------------------------
+Pequenas telas: até 600px
+Celular:de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas:Acima de 1200px
+------------------------------
+Atualmente, os pontos de interrupção para design responsivo ainda seguem o mesmo princípio básico, mas com algumas variações dependendo do dispositivo e do fluxo de trabalho. Embora os breakpoints tradicionais ainda sejam amplamente usados, com o avanço da tecnologia e o aumento de novos dispositivos, há uma tendência de ajustar esses pontos com base em resoluções específicas dos dispositivos mais comuns.
+
+Aqui estão os breakpoints mais modernos e comumente utilizados hoje em dia:
+
+Pequenas telas (até 480px):
+
+Este breakpoint é utilizado para smartphones menores, que são mais comuns em mercados emergentes.
+Alguns dispositivos específicos, como o iPhone SE, caem dentro dessa faixa.
+A navegação geralmente é feita de forma vertical, com bastante foco na experiência de toque.
+Celular (481px até 768px):
+
+Para smartphones padrão, como iPhones 8, Galaxy S9, etc.
+Pode se referir a telas em modo retrato ou paisagem.
+Os designs começam a ter mais espaço, com colunas únicas ou layouts simplificados.
+Tablet (769px até 1024px):
+
+Utilizado para tablets, como o iPad Mini e outros dispositivos de 8 a 10 polegadas.
+A interface precisa ser otimizada tanto para o modo retrato quanto para o modo paisagem.
+O layout começa a se aproximar de uma versão mais próxima ao desktop, com mais áreas de conteúdo.
+Desktop (1025px até 1200px):
+
+Para desktops e laptops com resoluções padrão.
+A navegação e a distribuição de conteúdo geralmente se ajustam para melhor uso do espaço disponível, com múltiplas colunas e áreas de navegação complexas.
+Este breakpoint pode variar dependendo do dispositivo, mas normalmente cobre a maioria dos monitores.
+Grandes telas (acima de 1200px):
+
+Para monitores grandes, como telas de 27 polegadas ou mais, ou dispositivos de alta resolução.
+Normalmente usado para desktops avançados ou monitores com maior resolução.
+O design pode se expandir para oferecer uma experiência visual imersiva com conteúdo em grid, imagens de alta qualidade, etc.
+
+*/
+
+/* Para Impressão */
+@media print {
+     
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    body{
+        /* desnecessario */
+        background-image: url(../imagens/back-print.jpg);
+
+        
+       
+
+    } 
+
+    main{
+        border: 2px solid black;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        content: 'Essa impressão é boa';
+        text-decoration: overline;
+    }
+
+    img#phone{
+        display:none ;
+
+    }
+    img#tablet{
+        display: none;
+    }
+    img#print{
+        display: block;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+}
+    
+        
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    /* icones NONE */
+
+    img#phone{
+        display:none ;
+
+    }
+    img#tablet{
+        display: block;
+    }
+    img#print{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) and ( max-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+
+    }
+
+        /* icones NONE */
+    img#phone{
+        display:none ;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#print{
+        display: none;
+    }
+    img#pc{
+        display: block;
+    }
+    img#tv{
+        display: none;
+    }
+}
+
+/* Telas Grandes */
+@media screen and (min-width: 1200px)  {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 700px;
+    }
+
+    /* icones NONE */
+    img#phone{
+    display:none ;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#print{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: block;
+    }
+}
+
